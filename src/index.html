@@ -11,7 +11,13 @@
 </head>
 <body>
 
-  <um-side-drawer></um-side-drawer>
+  <um-side-drawer title="Main Menu"></um-side-drawer>
 
+  <script>
+    const sideDrawer = document.querySelector('um-side-drawer');
+    setTimeout(() => {
+      // sideDrawer.setAttribute('title', 'It changed via Attribute!');
+    }, 3000);
+  </script>
 </body>
 </html>

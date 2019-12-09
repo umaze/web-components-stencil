@@ -10,7 +10,9 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-  interface UmSideDrawer {}
+  interface UmSideDrawer {
+    'title': string;
+  }
 }
 
 declare global {
@@ -27,7 +29,9 @@ declare global {
 }
 
 declare namespace LocalJSX {
-  interface UmSideDrawer {}
+  interface UmSideDrawer {
+    'title'?: string;
+  }
 
   interface IntrinsicElements {
     'um-side-drawer': UmSideDrawer;
