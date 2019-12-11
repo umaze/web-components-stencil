@@ -40,9 +40,10 @@
     const sideDrawerButton = document.querySelector('#side-drawer-btn');
     const sideDrawer = document.querySelector('um-side-drawer');
     sideDrawerButton.addEventListener('click', () => {
-      if (!sideDrawer.open) {
+      if (!sideDrawer.opened) {
         console.log('Opening Side Nav...');
-        sideDrawer.setAttribute('open', true);
+        // sideDrawer.setAttribute('open', true);
+        sideDrawer.open();
       }
     });
     setTimeout(() => {
